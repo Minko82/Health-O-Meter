@@ -1,0 +1,38 @@
+<%- include('../partials/header') %>
+<%- include('../partials/menu') %>
+
+<body style="background-color: #ffd8d8">
+
+<div class="container">
+		<br>
+		<div class="jumbotron" style="background-color: white;">
+		  <h1 class="display-4" style="text-align: center;">Search History</h1>
+		</div>
+		
+		<table class="table table-bordered" style="text-align: center; border-radius: 5px; " id="searchTable">
+			<thead>
+                <tr style="background-color: #fee4e4;">
+                    <th class="align-bottom" rowspan="2" style="color: #e16868; border-color: #e16868;">ID</th>
+                    <th class="align-bottom"rowspan="2" style="color: #e16868; border-color: #e16868;">Name</th>
+                    <th class="align-bottom" rowspan="2" style="color: #e16868; border-color: #e16868;">Category</th>
+                    <th class="align-bottom"rowspan="2" style="color: #e16868; border-color: #e16868;">Area</th>
+                    <th class="align-bottom" rowspan="2" style="color: #e16868; border-color: #e16868;">Tag(s)</th>
+        
+                </tr>
+            </thead>
+            
+            <% if (meals) { %>
+				<% meals.forEach(meal => { %>
+                    <tr></tr>
+				
+						<td style="border-color: #e16868;"><%= meal.idmeal%></td>
+						<td style="border-color: #e16868;"><%= meal.strmeal %></td>
+						<td style="border-color: #e16868;"><%= meal.strcategory %></td>
+						<td style="border-color: #e16868;"><%= meal.strarea %></td>
+                        <td style="border-color: #e16868;"><%= meal.strtags %></td>
+
+				<% }); %>
+			<% } %>
+		</table>
+
+<%- include('../partials/footer') %>

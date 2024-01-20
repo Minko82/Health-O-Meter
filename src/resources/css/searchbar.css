@@ -1,0 +1,45 @@
+/* Removes border around search box */
+* {
+    outline: none; 
+  }
+    
+input {
+    color: #fff;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+  
+#cover {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    height: 100px;
+    padding: 25px;
+    margin: -83px auto 0 auto; 
+    background-color: #fee4e4;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #ff8e8e, 0 0 0 20px #ffffffeb;
+    transform: scale(0.6);
+  }
+  
+  form {
+    height: 50px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    line-height: 1;
+    /* color:darkcyan; */
+    color:red;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #e16868;
+  }
