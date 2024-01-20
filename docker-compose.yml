@@ -1,0 +1,40 @@
+version: "3.7"
+# ------------------------------------------------------------------------------
+# More resources related to this file:
+# [1] Overview   | https://docs.docker.com/compose/
+# [2] PostgreSQL | https://github.com/docker-library/docs/tree/master/postgres
+# [3] Node.js    | https://github.com/nodejs/docker-node/blob/master/README.md#how-to-use-this-image
+# -------------
+#  More resources for your projects:
+# [4] Samples    | https://github.com/docker/awesome-compose
+# [5] Env Vars   | https://docs.docker.com/compose/environment-variables/
+# [6] Secrets    | https://docs.docker.com/engine/swarm/secrets/#use-secrets-in-compose
+# ------------------------------------------------------------------------------
+
+services:
+  heroku-cli:
+    build: ./heroku
+    env_file: ./heroku/.env
+
+  db:
+    build: ./db
+    env_file: .env
+    volumes:
+      - ./db/init_data:/docker-entrypoint-initdb.d
+      - meals-db-volumes:/var/lib/postgresql/data  
+
+  web:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+      target: devapp
+    depends_on:
+      - db                                      
+    env_file: .env
+    ports:
+        - "3000:3000" 
+    volumes:
+      - ./src:/app/src
+
+volumes:
+  meals-db-volumes: {}
