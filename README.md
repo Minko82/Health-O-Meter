@@ -1,31 +1,39 @@
-# Health-O-Meter
+# 🥗 **Health-O-Meter**
+
+## 📄 **Overview**
+
+Health-O-Meter is a cutting-edge web application that provides instant health insights for recipes. Users can search for any recipe and receive detailed nutrition facts and health benefits, empowering them to make informed dietary choices tailored to their allergies and dietary needs. It's the perfect tool for individuals striving to maintain a healthy lifestyle without the hassle of extensive research.
+
+<br>
+
 ---
 
-## Project Description:
-Health-O-Meter is an innovative web application designed to offer instant health insights for recipes. Users can search for a recipe and receive comprehensive nutrition facts and health benefits, aiding users in making healthier eating choices that cater to their specific allergies and diets. This tool is ideal for individuals looking to maintain a healthy diet without the hassle of extensive research.
+## 🌟 **Features**
+
+- **Recipe Analysis**: Input any recipe to receive detailed nutrition information.
+- **Health Benefits**: Gain insights into the health advantages of each recipe.
+- **Dietary Support**: Tailored recommendations based on user allergies and diet preferences.
+- **User-Friendly Interface**: A seamless and responsive design for effortless navigation.
+
+<br>
 
 ---
 
-## Website Features:
-- Users can input any recipe and get detailed nutrition information.
-- The application provides health benefits associated with each recipe, aiding users in making healthier eating choices.
-  
+## 💻 **Technologies and Tools**
+
+### **Backend**
+- **Node.js**: For server-side logic and efficient data handling.
+- **SQL Database**: To store and retrieve recipe data.
+- **Recipe API Integration**: Offers a wide variety of recipes with comprehensive data.
+
+### **Frontend**
+- **HTML, CSS, JavaScript**: For building a dynamic and responsive user interface.
+- **EJS Templates**: For rendering server-side data into visually appealing web pages.
+- **MVC Architecture**: Ensures modularity by separating data, logic, and presentation layers.
+
+### **Deployment**
+- **Docker**: Simplified containerization for smooth deployment and scalability.
+- **Heroku**: Cloud hosting for reliable and accessible deployment.
+
+
 ---
-
-## Application Architecture:
-**Backend:**
-
-- Node.js for the server-side logic.
-- SQL Database
-- API for recipe variety
-  
-**Front-End:**
-
-- HTML, CSS, and JavaScript for building a dynamic and responsive user interface.
-- MVC (to to divide the information and create functions that allow for more accurate relationships to the databases)
-- EJS templates for rendering server-side data on web pages.
-  
-**Deployment:**
-
-- Docker (containerization for easy deployment and scalability)
-- Heroku deployment (cloud hosting)
