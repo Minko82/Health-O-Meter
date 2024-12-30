@@ -2,7 +2,7 @@
 
 ## 📝 **Project Description**
 
-Health-O-Meter is a cutting-edge web application that provides instant health insights for recipes. Users can search for any recipe and receive detailed nutrition facts and health benefits, empowering them to make informed dietary choices tailored to their allergies and dietary needs. It's the perfect tool for individuals striving to maintain a healthy lifestyle without the hassle of extensive research.
+Web app offering instant health insights for recipes, including nutrition facts and benefits, tailored to dietary needs and allergies.
 
 <br>
 
